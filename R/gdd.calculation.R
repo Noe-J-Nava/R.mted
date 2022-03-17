@@ -6,7 +6,7 @@
 #'
 #' @description gdd.calculation() calculates crop specific GDD using as daily average the formula 0.5*(tmin + tmax). tmin and tmax must be vectors and have the same dimensions. tbase must be a scalar.
 #'
-#' @return GDD
+#' @return Growing degree days temperature.
 #' @export
 #'
 #' @examples

@@ -6,7 +6,7 @@
 #' @param data_dir Directory where prism data is
 #' @param shpFile Polygons shapefile in "SpatialPolygonsDataFrame".
 #'
-#' @description TBD
+#' @description Calculates polygons average weather from PRISM rasters. It requires a polygon shape file and PRISM data-as it is structured from PRISM: Climate project
 #'
 #' @return Average mean of squared grid within the polygon for either variable.
 #' @import prism
