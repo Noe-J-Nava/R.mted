@@ -3,5 +3,7 @@
 export(averge.polygonsPRISM)
 export(edd.calculation)
 export(gdd.calculation)
+import(lubridate)
 import(prism)
 importFrom(exactextractr,exact_extract)
+importFrom(stringr,str_pad)

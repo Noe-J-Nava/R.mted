@@ -4,12 +4,14 @@
 \alias{averge.polygonsPRISM}
 \title{Calculate polygons average weather variable from PRISM raster}
 \usage{
-averge.polygonsPRISM(varName, day, data_dir, shpFile)
+averge.polygonsPRISM(varName, dayStart, dayEnd, data_dir, shpFile)
 }
 \arguments{
 \item{varName}{Variable name is either 'ppt', 'tmax', or 'tmin'.}
 
-\item{day}{Day must be in format yyyymmdd (e.g., 199910113, for yyyy = 1991, mm = 10, and dd = 13).}
+\item{dayStart}{Initial day must be in format %Y/%m/%d  (e.g., 19991/01/13, for %Y = 1991, %m = 10, and %d = 13).}
+
+\item{dayEnd}{Last day must be in format %Y/%m/%d  (e.g., 19991/01/13, for %Y = 1991, %m = 10, and %d = 13).}
 
 \item{data_dir}{Directory where prism data is}
 
