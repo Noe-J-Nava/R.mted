@@ -1,10 +1,12 @@
 #' @title Calculate polygons average weather variable from PRISM raster
 #'
 #' @param varName Variable name is either 'ppt', 'tmax', or 'tmin'.
-#' @param dayStart Initial day must be in format %Y/%m/%d  (e.g., 19991/01/13, for %Y = 1991, %m = 10, and %d = 13).
-#' @param dayEnd Last day must be in format %Y/%m/%d  (e.g., 19991/01/13, for %Y = 1991, %m = 10, and %d = 13).
+#' @param dayStart Initial day must be in format 'Y/m/d'
+#' @param dayEnd Last day must be in format 'Y/m/d'
 #' @param data_dir Directory where prism data is
 #' @param shpFile Polygons shapefile in "SpatialPolygonsDataFrame".
+#'
+#' @description TBD
 #'
 #' @return Average mean of squared grid within the polygon for either variable.
 #' @import prism
@@ -15,7 +17,7 @@
 #' @export
 #'
 #' @examples
-averge.polygonsPRISM <- function(varName, dayStart, dayEnd, data_dir, shpFile) {
+average.polygonsPRISM <- function(varName, dayStart, dayEnd, data_dir, shpFile) {
 
   varNames <- c("ppt", "tmax", "tmin")
   if( !varName %in% varNames) {
